@@ -12,21 +12,22 @@ var max=parseInt(prompt("inserisci un numero tra 0 e " + myArray.length));
 console.log(max);
 
 var secondArray=[];
+secondArray.push(myArray.slice(min +1 , max));
 
-function createNewArray(){
-    var i=0;
 
-    while (i<=myArray.length){
-       
-        var name=myArray[i]
-        var namePosition=myArray.indexOf[name]
-        console.log(namePosition)
-        if(namePosition>min && namePosition<max)
-        secondArray.push(name);
-        i++;
-    }
-    console.log(secondArray);
-    return secondArray
-}
+// function createNewArray(){
+//     var i=0;
 
-createNewArray();
+//     while (i<=myArray.length){
+//         var name=myArray[i]
+//         var namePosition=myArray.indexOf[name]
+//         console.log(namePosition)
+//         if(namePosition>min && namePosition<max)
+//         secondArray.push(name);
+//         i++;
+//     }
+//     console.log(secondArray);
+//     return secondArray
+// }
+
+console.log(secondArray)
