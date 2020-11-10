@@ -6,13 +6,17 @@ var myArray = ['Michele', 'Fabio', 'Roberto', 'Giovanni', 'Simone', 'Chiara'];
 console.log(myArray);
 
 
-var min=parseInt(prompt("inserisci un numero tra 0 e " + myArray.length));
-console.log(min);
-var max=parseInt(prompt("inserisci un numero tra 0 e " + myArray.length));
-console.log(max);
+var firstNum=parseInt(prompt("inserisci un numero tra 0 e " + myArray.length));
+console.log(firstNum);
+var secondNum=parseInt(prompt("inserisci un numero tra 0 e " + myArray.length));
+console.log(secondNum);
 
 var secondArray=[];
-secondArray.push(myArray.slice(min +1 , max));
+// if(firstNum<secondNum){
+    secondArray.push(myArray.slice(firstNum , secondNum+1));
+// if (secondNum>firstNum){
+    
+// }
 
 
 // function createNewArray(){
