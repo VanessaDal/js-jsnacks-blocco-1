@@ -9,7 +9,7 @@ var arrayObj = [
     {name: 'Jenny', type: 'borsa', color: 'pink'},
   ];
 
-  document.getElementById("first").innerHTML("arrayObj")
+  document.getElementById("first").innerHTML="test primo array: " + arrayObj[0].name +" " + arrayObj[0].type +" " + arrayObj[0].color + " " + arrayObj[0].position
 
   var newArray=[];
 
@@ -29,3 +29,6 @@ function generateRandomLetter() {
   newArray[key].position=generateRandomLetter()}
 
   console.log(newArray)
+  document.getElementById("second").innerHTML="test secondo array: " + newArray[0].name +" " + newArray[0].type +" " + newArray[0].color + " " + newArray[0].position
+
+  document.getElementById("third").innerHTML="test primo array: " + arrayObj[0].name +" " + arrayObj[0].type +" " + arrayObj[0].color + " " + arrayObj[0].position
