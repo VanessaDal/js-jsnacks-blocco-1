@@ -12,11 +12,12 @@ var secondNum=parseInt(prompt("inserisci un numero tra 0 e " + myArray.length));
 console.log(secondNum);
 
 var secondArray=[];
-// if(firstNum<secondNum){
-    secondArray.push(myArray.slice(firstNum , secondNum+1));
-// if (secondNum>firstNum){
-    
-// }
+if(firstNum<secondNum){
+    secondArray.push(myArray.slice(firstNum , secondNum+1))
+}
+ else{
+    secondArray.push(myArray.slice(secondNum , firstNum+1));
+ };
 
 
 // function createNewArray(){
